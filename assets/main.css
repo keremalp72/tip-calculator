@@ -1,0 +1,50 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: #c5e4e7;
+}
+
+.logo {
+  display: inline-block;
+  padding: 50px 144px 40px;
+  color: #3d6666;
+  text-align: center;
+}
+.all-in-container {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+  padding: 32px;
+}
+.calculator {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.bill {
+  grid-column: 1 / span 2;
+}
+.bill h6{
+  color: #5e7a7d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  margin-bottom: 6px;
+}
+.input-container{
+    display: flex;
+}
+.input-container i{
+    padding: 16px 19px;
+background-color: #F3F9FA;
+}
+.bill-input{
+    padding: 6px 18px;
+    
+    background-color: #F3F9FA;
+    text-align: right;
+}
+.bill-input:hover{
+    outline-color:1px solid #00474B;
+    border-color: 1px solid #00474B;
+}
