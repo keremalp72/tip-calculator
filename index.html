@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/main.css" />
     <script src="assets/calculator.js" defer></script>
-    <script src="https://kit.fontawesome.com/58790818f7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/58790818f7.js"
+      crossorigin="anonymous"
+    ></script>
     <title>calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="logo">
-        <h3>S P L I <br> T T E R</h3>
+      <h3>
+        S P L I <br />
+        T T E R
+      </h3>
     </div>
     <div class="all-in-container">
-        <div class="calculator">
-            <div class="bill">
-                <h6>Bill</h6>
-                <div class="input-container">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <input type="number" class="bill-input" placeholder="0">
-                </div>
-            </div>
+      <div class="container">
+        <div class="bill">
+          <h6>Bill</h6>
+          <div class="input-container">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <input id="price" type="number" class="bill-input" placeholder="0" />
+          </div>
         </div>
+        <div class="select-tip">
+          <h6>Select Tip %</h6>
+          <div class="button-container">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input id="tipAmount" type="number" class="custom" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="people">
+          <h6>Number of People</h6>
+          <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input id="peopleNumber" type="number" class="bill-input" placeholder="0" />
+          </div>
+        </div>
+      </div>
+      <div class="tip-container">
+        <div class="tip-amount">
+          <div class="tip-text">
+            <h2>Tip Amount</h2>
+            <h5>/ person</h5>
+          </div>
+          <div class="span">
+            <span id="tipPerson">$4.27</span>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="tip-text">
+            <h2>Total</h2>
+            <h5>/ person</h5>
+          </div>
+          <div class="span">
+            <span id="totalPerson">$32.79</span>
+          </div>
+        </div>
+        <button id="hesaplaBtn">HESAPLA</button>
+        <button id="resetBtn">RESET</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
